@@ -1,6 +1,6 @@
 async function getQuote() {
   try {
-    const res = await fetch('http://127.0.0.1:5000/api/quote');  // Local backend URL
+    const res = await fetch('https://backend-y6s6.onrender.com');  // Local backend URL
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
@@ -12,3 +12,4 @@ async function getQuote() {
     document.getElementById('quote').textContent = "Oops! Could not load quote.";
   }
 }
+
