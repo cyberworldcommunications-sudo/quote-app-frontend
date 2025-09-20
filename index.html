@@ -5,11 +5,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Random Quote</h1>
-  <p id="quote">Loading quote...</p>
-  <button onclick="getQuote()">Get Quote</button>
 
-  <!-- Load the script after the page elements -->
+  <h1>Random Quote</h1>
+
+  <div id="quote-box">
+    <p id="quote">Click the button to load a quote</p>
+    <p id="author"></p>
+  </div>
+
+  <div>
+    <button onclick="getQuote()">🎲 Get Quote</button>
+    <button onclick="saveFavorite()">💖 Save Favorite</button>
+  </div>
+
+  <div id="favorites">
+    <h2>Saved Favorites</h2>
+    <div id="favorite-list"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
